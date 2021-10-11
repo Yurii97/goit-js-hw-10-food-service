@@ -25,8 +25,9 @@ function loadTheme() {
         bodyRef.classList.remove(Theme.LIGHT);
         bodyRef.classList.add(Theme.DARK);
         themeToggleRef.checked = saveCheckToggle;
+    } else {
+        bodyRef.classList.add(Theme.LIGHT);         
     }
-    bodyRef.classList.add(Theme.LIGHT);    
 }
 
 function onClickToggle(ev) {    
